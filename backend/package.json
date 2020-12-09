@@ -1,0 +1,37 @@
+{
+  "name": "hnp-api",
+  "version": "0.0.0",
+  "description": "API",
+  "main": "index.ts",
+  "scripts": {
+    "checklint": "tslint --project tsconfig.json --config tslint.json",
+    "tslint-fix": "tslint --project tsconfig.json --config tslint.json --fix",
+    "start": "tsc index.ts && node index.js",
+    "start:dev": "npm run checklint && ./node_modules/nodemon/bin/nodemon.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Cortes-Maria/Proyecto-HNP.git"
+  },
+  "author": "yelizondo",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^8.5.1"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/express": "4.17.8",
+    "@types/jsonwebtoken": "^8.5.0",
+    "@types/node": "14.11.8",
+    "@types/node-fetch": "^2.5.7",
+    "@types/pg": "^7.14.7",
+    "nodemon": "2.0.4",
+    "ts-node": "9.0.0",
+    "tslint": "6.1.3",
+    "typescript": "4.0.3"
+  }
+}

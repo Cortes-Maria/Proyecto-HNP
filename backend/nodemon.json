@@ -1,0 +1,11 @@
+{
+    "ignore": [".git", "node_modules"],
+    "watch": ["./"],
+    "exec": "npm start",
+    "ext": "ts",
+    "env": {
+        "POSTGRES_URI": "postgres://forttyfhcsgqve:d9d1d616435bac9b35362270df2820a17713a03ba9bf17be5d8b443ac474d7bd@ec2-54-235-116-235.compute-1.amazonaws.com:5432/dait93ovopta51",
+        "PORT": 5000,
+        "JWT_KEY": "s-sea-sdt_t@#@#his%$3_ould?<_be_lo#@nger"
+    }
+}

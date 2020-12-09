@@ -102,3 +102,10 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Mac OS Files
+.DS_Store
+
+# Typescript Compiled files
+backend/*.js
+backend/**/*.js
