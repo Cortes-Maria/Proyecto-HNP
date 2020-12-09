@@ -3,7 +3,7 @@ RETURNS TABLE (id INT, password VARCHAR)
 AS 
 $BODY$
 	
-	SELECT IdNumber, Password
+	SELECT Id, Password
 	FROM UserData UD
 	WHERE UD.UserName = pIdentifier OR UD.Email = pIdentifier;
 $BODY$

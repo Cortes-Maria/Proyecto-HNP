@@ -1,0 +1,15 @@
+CREATE TABLE PermissionXUserType 
+(
+	Id INT GENERATED ALWAYS AS IDENTITY,
+	PermissionId INT NOT NULL,
+	UserTypeId INT NOT NULL,
+	PRIMARY KEY(Id),
+	CONSTRAINT FK_Permission_PermissionXUserData
+		FOREIGN KEY (PermissionId)
+		REFERENCES Permission(Id)
+		ON DELETE CASCADE,
+	CONSTRAINT FK_UserData_PermissionXUserData
+		FOREIGN KEY (UserTypeId)
+		REFERENCES UserType(Id)
+		ON DELETE CASCADE
+)
