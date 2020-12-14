@@ -1,8 +1,57 @@
 mat-form-field {
-  width: 100%;
-
+  font-family: 'Montserrat', sans-serif;
+  width: 450px;
+  text-align: center;
+  font-size: medium;
+  color: black;
+  
 }
 
 mat-spinner {
   margin: auto;
+}
+
+mat-card {
+  background-color: #293445;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  width: 625px;
+  margin-right: 0px;
+  padding-bottom: 90px;
+  
+}
+
+mat-card-title {
+ margin-left: 90px;
+ padding-top: 75px;
+ margin-bottom: 17px;
+ font-size: x-large;
+
+}
+
+.mat-raised-button.mat-primary {
+  background-color: #18A0FB;
+  color: black;
+  width: 450px;
+  height: 81px;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+hr {
+  width : 530px
+}
+
+form {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.input-text {
+  font-family: 'Montserrat', sans-serif;
+  background-color: white;
+  height: 65px;
 }
