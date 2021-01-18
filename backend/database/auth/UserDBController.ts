@@ -16,10 +16,8 @@ export class UserDBController {
         return new Promise((resolve, reject) => {
             const pass = '';
             const status = 0;
-            console.log(pIdentifier);
             db.query('CALL sp_getpassword($1, $2, $3)', [pIdentifier, pass, status])
             .then(rs => {
-                console.log(rs);
                 if (rs.rows[0].status === 1) {
                     const user: IUser = {
                         email: pIdentifier,
