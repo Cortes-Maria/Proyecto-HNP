@@ -1,6 +1,6 @@
 import * as express from 'express';
 import { Logger } from '../common';
-import { UserRouter } from "./";
+import { UserRouter, FormRouter } from "./";
 import * as bodyParser from 'body-parser';
 
 class Routes {
@@ -22,6 +22,7 @@ class Routes {
 
     private routes(): void {
         this.express.use('/user', UserRouter);
+        this.express.use('/forms', FormRouter);
     }
 }
 
