@@ -1,6 +1,8 @@
 a {
   text-decoration: none;
   color: white;
+  font-family: 'Montserrat', sans-serif;
+  
 }
 
 ul {
@@ -11,8 +13,16 @@ ul {
 
 ul {
   display: flex;
+  
 }
 
 .spacer {
   flex: 1 1 auto;
+}
+
+.mat-toolbar {
+  background: #293445;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: xx-large;
 }

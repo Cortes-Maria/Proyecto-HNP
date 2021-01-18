@@ -11,6 +11,7 @@ const routes: Routes = [
   { path: 'edit/:postId', component: PostCreateComponent, canActivate: [AuthGuard] },
   { path: 'auth', loadChildren: './auth/auth.module#AuthModule' },
   { path: 'test', component: TestComponent },
+  { path: 'forms', loadChildren: './forms/forms.module#FormulariosModule'}
 ];
 
 @NgModule({
