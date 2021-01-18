@@ -1,0 +1,15 @@
+CREATE TABLE FormXQuestion
+(
+	Id INT GENERATED ALWAYS AS IDENTITY,
+	FormId INT,
+	QuestionId INT,
+	PRIMARY KEY (Id),
+	CONSTRAINT FK_Form_FormXQuestion
+	      FOREIGN KEY(FormId) 
+		  REFERENCES Form(Id)
+		  ON DELETE CASCADE,
+	CONSTRAINT FK_Question_FormXQuestion
+	      FOREIGN KEY(QuestionId) 
+		  REFERENCES Question(Id)
+		  ON DELETE CASCADE
+);
