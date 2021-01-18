@@ -1,0 +1,12 @@
+CREATE TABLE Form
+(
+	Id INT GENERATED ALWAYS AS IDENTITY,
+	Name VARCHAR(100),
+	FormTypeId INT,
+	LastModification DATE,
+	PRIMARY KEY (Id),
+	CONSTRAINT FK_FormType_Form
+	      FOREIGN KEY(FormTypeId) 
+		  REFERENCES FormType(Id)
+		  ON DELETE CASCADE
+);
